@@ -1,0 +1,13 @@
+
+
+{{#mail}}
+    <li id="liste_mail" class="liste_mail" onclick="afficherMail({{id}})">
+        <a id="listeMail"  href="#l">
+           {{date}} <b>{{expediteur}}</b> {{message}}
+        </a>
+        <a id="croix" onclick="supprimer({{id}}, {{$indice}})" href="#">
+            <span class="croixgauche"></span>
+            <span class="croixdroite"></span>
+        </a>
+    </li>
+{{/mail}}
